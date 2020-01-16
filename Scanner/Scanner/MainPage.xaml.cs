@@ -116,7 +116,7 @@ namespace Scanner
                         });
                     }
 
-                    //Create the result
+                    //Build output
                     string result = "Title: " + bookTitle + ". Offer: $" + highestOffer + ".";
 
                     //Display alert showing results
@@ -149,6 +149,7 @@ namespace Scanner
                 //Loop through all the books
                 foreach (var book in Books)
                 {
+                    //Build output
                     string result = "Title: " + book.Title + ". Offer: $" + book.Offer + ".";
 
                     //Display alert showing books
