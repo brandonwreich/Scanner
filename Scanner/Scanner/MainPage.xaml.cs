@@ -126,18 +126,18 @@ namespace Scanner
         }
 
         //When clicked clears all the data from the lists
-        private void ClearListButton_Clicked(object sender, EventArgs e)
+        private async void ClearListButton_Clicked(object sender, EventArgs e)
         {
             //Clear lists
             Isbns.Clear();
             Books.Clear();
 
             //Display alert comfirming lists were cleared
-            DisplayAlert("Confirmation", "Lists have been cleared.", "Thanks");
+            await DisplayAlert("Confirmation", "Lists have been cleared.", "Thanks");
         }
 
         //When clicked it shows the book offers
-        private void ViewListButton_Clicked(object sender, EventArgs e)
+        private async void ViewListButton_Clicked(object sender, EventArgs e)
         {
             if (Books.Count == 0)
             {
@@ -152,7 +152,7 @@ namespace Scanner
                     string result = "Title: " + book.Title + ". Offer: $" + book.Offer + ".";
 
                     //Display alert showing books
-                    DisplayAlert("Books", result, "Okay");
+                    await DisplayAlert("Books", result, "Okay");
                 }
             }
         }
