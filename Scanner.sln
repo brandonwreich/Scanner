@@ -1,0 +1,35 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29709.97
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scanner.Android", "Scanner\Scanner.Android\Scanner.Android.csproj", "{14C2C7A6-1F31-493C-A893-613E7434511D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Scanner", "Scanner\Scanner\Scanner.csproj", "{5E639DA3-EC06-423B-9499-DFE00D23A0CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{14C2C7A6-1F31-493C-A893-613E7434511D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{14C2C7A6-1F31-493C-A893-613E7434511D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{14C2C7A6-1F31-493C-A893-613E7434511D}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{14C2C7A6-1F31-493C-A893-613E7434511D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{14C2C7A6-1F31-493C-A893-613E7434511D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{14C2C7A6-1F31-493C-A893-613E7434511D}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{5E639DA3-EC06-423B-9499-DFE00D23A0CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E639DA3-EC06-423B-9499-DFE00D23A0CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E639DA3-EC06-423B-9499-DFE00D23A0CE}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{5E639DA3-EC06-423B-9499-DFE00D23A0CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E639DA3-EC06-423B-9499-DFE00D23A0CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5E639DA3-EC06-423B-9499-DFE00D23A0CE}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1F7799D9-599C-4D3D-84CE-806F5CD569B8}
+	EndGlobalSection
+EndGlobal
