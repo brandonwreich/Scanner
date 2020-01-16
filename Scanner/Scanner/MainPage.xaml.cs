@@ -142,7 +142,7 @@ namespace Scanner
             if (Books.Count == 0)
             {
                 //Display alert asking to scan books
-                DisplayAlert("Data Error", "You have no books! Please scan and compare some books.", "Sorry");
+                await DisplayAlert("Data Error", "You have no books! Please scan and compare some books.", "Sorry");
             }
             else
             {
