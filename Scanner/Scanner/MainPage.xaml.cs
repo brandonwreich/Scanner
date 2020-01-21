@@ -105,6 +105,7 @@ namespace Scanner
                         }
                     }
 
+                    //Checks to see if book is already in the list
                     if(!checkInList(bookTitle, isbn))
                     {
                         //Add data to books list
@@ -117,6 +118,8 @@ namespace Scanner
                     }
 
                     string result;
+
+                    //If book was not found
                     if (bookTitle == "" && highestOffer == 0)
                     {
                         result = "Isbn " + isbn + "  was not found";
@@ -147,6 +150,7 @@ namespace Scanner
         //When clicked it shows the book offers
         private async void ViewListButton_Clicked(object sender, EventArgs e)
         {
+            //If there are no books in the bookList
             if (Books.Count == 0)
             {
                 //Display alert asking to scan books
@@ -166,10 +170,13 @@ namespace Scanner
             }
         }
 
+        //Checks to see if the book is already in the bookList
         public bool checkInList(string bookTitle, string isbn)
         {
+            //Loop through books
             foreach (Book book in Books)
             {
+                //If book is there
                 if (bookTitle.Equals(book.Title) && isbn.Equals(book.Isbn))
                 {
                     return true;
