@@ -116,8 +116,16 @@ namespace Scanner
                         });
                     }
 
-                    //Build output
-                    string result = "Title: " + bookTitle + ". Offer: $" + highestOffer + ".";
+                    string result;
+                    if (bookTitle == "" && highestOffer == 0)
+                    {
+                        result = "Isbn " + isbn + "  was not found";
+                    }
+                    else
+                    {
+                        //Build output
+                        result = "Title: " + bookTitle + ". Offer: $" + highestOffer + ".";
+                    }
 
                     //Display alert showing results
                     await DisplayAlert("Buyback Option", result, "Ok");
