@@ -106,7 +106,7 @@ namespace Scanner
                     }
 
                     //Checks to see if book is already in the list
-                    if(!checkInList(bookTitle, isbn))
+                    if(!CheckInList(bookTitle, isbn))
                     {
                         //Add data to books list
                         Books.Add(new Book
@@ -118,11 +118,11 @@ namespace Scanner
                     }
 
                     string result;
-
                     //If book was not found
                     if (bookTitle == "" && highestOffer == 0)
                     {
-                        result = "Isbn " + isbn + "  was not found";
+                        //Build output
+                        result = "Isbn " + isbn + " was not found";
                     }
                     else
                     {
@@ -133,6 +133,9 @@ namespace Scanner
                     //Display alert showing results
                     await DisplayAlert("Buyback Option", result, "Ok");
                 }
+
+                //Notify there are no more books to compare
+                await DisplayAlert("Buyback Option", "There are no more buy back options", "Ok");
             }
         }
 
@@ -171,7 +174,7 @@ namespace Scanner
         }
 
         //Checks to see if the book is already in the bookList
-        public bool checkInList(string bookTitle, string isbn)
+        public bool CheckInList(string bookTitle, string isbn)
         {
             //Loop through books
             foreach (Book book in Books)
